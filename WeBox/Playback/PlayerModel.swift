@@ -55,8 +55,9 @@ final class PlayerModel: ObservableObject {
     init(request: PlaybackRequest) {
         item = request.item
         source = request.source
-        episodes = request.episodes.isEmpty ? [request.item] : request.episodes
-        episodeIndex = min(max(0, request.index), max(0, episodes.count - 1))
+        let list = request.episodes.isEmpty ? [request.item] : request.episodes
+        episodes = list
+        episodeIndex = min(max(0, request.index), max(0, list.count - 1))
         streams = request.streams
         aspect = AppSettings.shared.values.defaultAspect
         speed = AppSettings.shared.values.defaultSpeed

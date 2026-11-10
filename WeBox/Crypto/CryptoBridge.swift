@@ -156,7 +156,7 @@ enum CryptoBridge {
     private static func aesCTR(input: Data, key: Data, iv: Data, decrypt: Bool, output: TextEncoding) throws -> String {
         var cryptorRef: CCCryptorRef?
         var keyBytes = [UInt8](key)
-        var ivBytes = [UInt8](iv)
+        let ivBytes = [UInt8](iv)
         let status = CCCryptorCreateWithMode(CCOperation(kCCEncrypt),
                                              CCMode(kCCModeCTR),
                                              CCAlgorithm(kCCAlgorithmAES),
