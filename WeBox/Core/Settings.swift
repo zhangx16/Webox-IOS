@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import AVFoundation
 import SwiftUI
 
 enum AppearanceMode: String, Codable, CaseIterable, Identifiable {

@@ -31,6 +31,6 @@ enum PlaybackResolver {
         PlaybackRequest(item: item, source: source, episodes: episodes, index: index,
                         streams: streams,
                         engine: AppSettings.shared.values.defaultEngine,
-                        loader: { episode in try await streams(for: episode, in: source) })
+                        loader: { episode in try await PlaybackResolver.streams(for: episode, in: source) })
     }
 }

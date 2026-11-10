@@ -154,18 +154,22 @@ enum CryptoBridge {
     }
 
     private static func aesCTR(input: Data, key: Data, iv: Data, decrypt: Bool, output: TextEncoding) throws -> String {
-        guard let cryptor = CCCryptorCreateWithMode(CCOperation(kCCEncrypt),
-                                                    CCMode(kCCModeCTR),
-                                                    CCAlgorithm(kCCAlgorithmAES),
-                                                    CCPadding(ccNoPadding),
-                                                    [UInt8](iv), [UInt8](key), key.count,
-                                                    nil, 0, 0,
-                                                    CCModeOptions(kCCModeOptionCTR_BE),
-                                                    nil) else {
+        var cryptorRef: CCCryptorRef?
+        var keyBytes = [UInt8](key)
+        var ivBytes = [UInt8](iv)
+        let status = CCCryptorCreateWithMode(CCOperation(kCCEncrypt),
+                                             CCMode(kCCModeCTR),
+                                             CCAlgorithm(kCCAlgorithmAES),
+                                             CCPadding(ccNoPadding),
+                                             ivBytes, keyBytes, key.count,
+                                             nil, 0, 0,
+                                             CCModeOptions(kCCModeOptionCTR_BE),
+                                             &cryptorRef)
+        guard status == CCCryptorStatus(kCCSuccess), let ref = cryptorRef else {
             throw CryptoError.message("AES/CTR 初始化失败")
         }
-        defer { CCCryptorRelease(cryptor) }
-        return try process(cryptor: cryptor, input: input, output: output)
+        defer { CCCryptorRelease(ref) }
+        return try process(cryptor: ref, input: input, output: output)
     }
 
     private static func aesGCM(input: Data, key: Data, iv: Data, decrypt: Bool, output: TextEncoding) throws -> String {
@@ -281,7 +285,7 @@ enum CryptoBridge {
         var digest = [UInt8](repeating: 0, count: length)
         data.withUnsafeBytes { raw in
             _ = digest.withUnsafeMutableBytes { out in
-                function(raw.baseAddress, data.count, out.baseAddress)
+                function(raw.baseAddress, data.count, out.baseAddress?.assumingMemoryBound(to: UInt8.self))
             }
         }
         return Data(digest)

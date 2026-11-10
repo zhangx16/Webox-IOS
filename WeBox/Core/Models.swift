@@ -86,9 +86,10 @@ enum JSONValue: Codable, Hashable {
 
 // MARK: - Script metadata
 
-struct EnumOption: Codable, Hashable {
+struct EnumOption: Codable, Hashable, Identifiable {
     var title: String
     var value: String
+    var id: String { value }
 }
 
 struct BelongTo: Codable, Hashable {

@@ -144,9 +144,9 @@ enum M3UParser {
                 continue
             }
             if line.hasPrefix("#") { continue }
-            guard let pending else { continue }
-            channels.append(M3UChannel(name: pending.name, url: line,
-                                       group: pending.group, logo: pending.logo))
+            guard let entry = pending else { continue }
+            channels.append(M3UChannel(name: entry.name, url: line,
+                                       group: entry.group, logo: entry.logo))
             pending = nil
         }
         return channels

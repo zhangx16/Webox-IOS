@@ -308,7 +308,7 @@ final class PlayerModel: ObservableObject {
             switch nsError.code {
             case AVError.fileFormatNotRecognized.rawValue:
                 return "当前引擎无法播放此格式，可以切换引擎或返回选择其他线路。"
-            case AVError.decoderNotFound.rawValue, AVError.decoderMalfunctioned.rawValue:
+            case AVError.decoderNotFound.rawValue, -11830:
                 return "播放器解码失败，请尝试其他线路。"
             default:
                 break

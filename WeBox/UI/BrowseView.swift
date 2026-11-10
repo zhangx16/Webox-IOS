@@ -234,30 +234,48 @@ struct BrowseView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
                 ForEach(model.filters) { filter in
-                    Menu {
-                        ForEach(filter.options) { option in
-                            Button {
-                                Task { await model.apply(filter.name, value: option.value) }
-                            } label: {
-                                if (model.values[filter.name] ?? filter.value) == option.value {
-                                    Label(option.title, systemImage: "checkmark")
-                                } else {
-                                    Text(option.title)
-                                }
-                            }
-                        }
-                    } label: {
-                        HStack(spacing: 4) {
-                            Text(label(for: filter))
-                                .font(.system(size: 12, weight: .medium))
-                            Image(systemName: "chevron.down").font(.system(size: 9))
-                        }
-                        .padding(.horizontal, 10).padding(.vertical, 6)
-                        .background(Theme.card, in: Capsule())
-                    }
+                    filterMenu(for: filter)
                 }
             }
         }
+    }
+
+    private func filterMenu(for filter: FilterChoice) -> some View {
+        Menu {
+            ForEach(filter.options) { option in
+                Button {
+                    apply(filter, option)
+                } label: {
+                    optionLabel(for: filter, option: option)
+                }
+            }
+        } label: {
+            HStack(spacing: 4) {
+                Text(label(for: filter))
+                    .font(.system(size: 12, weight: .medium))
+                Image(systemName: "chevron.down").font(.system(size: 9))
+            }
+            .padding(.horizontal, 10)
+            .padding(.vertical, 6)
+            .background(Theme.card, in: Capsule())
+        }
+    }
+
+    @ViewBuilder
+    private func optionLabel(for filter: FilterChoice, option: EnumOption) -> some View {
+        if selectedValue(for: filter) == option.value {
+            Label(option.title, systemImage: "checkmark")
+        } else {
+            Text(option.title)
+        }
+    }
+
+    private func selectedValue(for filter: FilterChoice) -> String {
+        model.values[filter.name] ?? filter.value ?? ""
+    }
+
+    private func apply(_ filter: FilterChoice, _ option: EnumOption) {
+        Task { await model.apply(filter.name, value: option.value) }
     }
 
     private func label(for filter: FilterChoice) -> String {
