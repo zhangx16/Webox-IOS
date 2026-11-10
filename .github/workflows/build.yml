@@ -161,3 +161,11 @@ jobs:
         run: |
           chmod +x scripts/publish_failure.sh
           bash scripts/publish_failure.sh
+
+      - name: Publish build report
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x scripts/publish_build_report.sh
+          bash scripts/publish_build_report.sh
