@@ -1,0 +1,303 @@
+﻿=== Lm71; ===
+   
+   -
+   -----[^-]+-----|\s
+   /
+   :
+   ://
+   AES
+   AES IV 长度不正确
+   AES 密钥需要 16、24 或 32 字节
+   AES/
+   CBC
+   CTR
+   ECB
+   GCM
+   Hmac
+   MD5
+   NOPADDING
+   NoPadding
+   PKCS5PADDING
+   PKCS5Padding
+   PKCS7
+   PKCS7PADDING
+   Pkcs7
+   RSA
+   RSA key format
+   RSA/ECB/PKCS1Padding
+   SHA-1
+   SHA-256
+   SHA-384
+   SHA-512
+   SHA1
+   SHA256
+   SHA384
+   SHA512
+   algorithm
+   allowHttp
+   base
+   base64
+   binary.concat
+   binary.patch
+   binary.read
+   binary.size
+   binary.slice
+   binary.write
+   compute
+   crypto.aes
+   crypto.encode
+   crypto.hash
+   crypto.hmac
+   crypto.random
+   crypto.rsa
+   data
+   decrypt
+   from
+   handle
+   handles
+   hex
+   http
+   https
+   i18n
+   inputEncoding
+   iv
+   ivEncoding
+   key
+   keyEncoding
+   length
+   message
+   method
+   mode
+   namespace
+   native.cache.generation
+   native.cache.seconds
+   native.cancelled
+   native.store.get
+   native.store.remove
+   native.store.set
+   offset
+   outputEncoding
+   padding
+   params
+   patches
+   ping
+   pong
+   r
+   runtime.capabilities
+   rw
+   seconds
+   shared-
+   sharedCache.
+   sharedCache.getItem
+   sharedCache.keys
+   sharedCache.removeItem
+   sharedCache.setItem
+   size
+   storage.clear
+   storage.getItem
+   storage.keys
+   storage.removeItem
+   storage.setItem
+   text
+   to
+   url
+   url.origin
+   url.resolve
+   url.validate
+   utf8
+   value
+   不支持的 AES 填充
+   不支持的 AES 模式
+   不支持的 HMAC 算法
+   不支持的加解密接口
+   不支持的摘要算法
+   二进制接口仅可在媒体响应回调中使用
+   二进制数据无效
+   二进制正文不完整
+   元数据阶段不支持媒体处理
+   元数据阶段不能写入私有存储
+   元数据阶段不能读取私有存储
+   共享缓存命名空间无效
+   写入数据过大
+   加解密内容过大
+   单次修改超过 64 KiB
+   单次写入超过 64 KiB
+   单次读取超过 64 KiB
+   拼接数量无效
+   暂不支持的同步接口：
+   未知二进制接口
+   此 AES 模式需要 NoPadding
+   网站地址需要 HTTPS 且不能内嵌账号密码
+   网页地址无效
+   补丁数据无效
+   补丁数量无效
+   补丁过大
+   随机数据长度无效
+=== Lv6; ===
+   
+    Dispatcher
+   ' is already registered with a dispatcher
+   .json
+   /
+   /images
+   /list
+   /season/
+   200
+   Call wasn't in-flight!
+   Check failed.
+   Collection contains more than one matching element.
+   Collection contains no element matching the predicate.
+   Failed requirement.
+   Handler '
+   TMDB 地址需要使用 https
+   Unsupported priority value: 
+   User-Agent
+   WeBox/0.3.0
+   air_date
+   api_key
+   append_to_response
+   backdrops
+   call to 'resume' before 'invoke' with coroutine
+   credits,recommendations
+   data
+   discover/
+   episode_number
+   episodes
+   executor rejected
+   false
+   file_path
+   first_air_date.desc
+   first_air_date_year
+   genre/
+   genres
+   headers
+   height
+   https://
+   https://api.themoviedb.org/
+   https://recommend.feifeiduck.com/tmdb/
+   https://tmdb.quswer.com/
+   id
+   images
+   include_adult
+   include_image_language
+   language
+   loadDetail
+   logos
+   media_type
+   module
+   movie
+   name
+   null
+   overview
+   page
+   params
+   posters
+   primary_release_date.desc
+   primary_release_year
+   query
+   rated
+   results
+   runtime
+   search/multi
+   sort_by
+   statusCode
+   still_path
+   success
+   timeout
+   total_pages
+   tv
+   tv/
+   url
+   vod
+   vote_average.desc
+   vote_count.gte
+   web
+   web-rules
+   width
+   with_genres
+   zh,en,null
+   zh-CN
+   不支持的内容源
+   使用 TMDB 官方 API 时，请在设置中填写自己的 API Key
+   内容源不能重新读取分集
+   内容源已移除
+   分集已变化
+   分集身份已变化
+   影视资料服务响应异常（HTTP 
+   影视资料服务暂不可用
+   影视资料服务未能完成请求
+   影视资料服务返回格式异常
+   播放分组已变化
+   播放地址暂不可用
+   播放线路已变化
+   播放选项
+   标志
+   海报
+   线路已变化
+   背景
+   ）
+=== Lun0; ===
+   ,
+   1.7976931348623157E308
+   90
+   Failed requirement.
+   absolute+exact
+   all=no
+   allowed_extensions=ALL
+   android
+   android-surface-size
+   ao
+   audiotrack,opensles
+   cache
+   cache-secs
+   config
+   crop
+   demuxer-cache-time
+   demuxer-lavf-o
+   demuxer-max-back-bytes
+   demuxer-max-bytes
+   duration
+   fast
+   file:
+   file://
+   force-window
+   gpu
+   gpu-context
+   http-header-fields
+   http://127.0.0.1:
+   hwdec
+   idle
+   keep-open
+   keepaspect
+   live_start_index=-1
+   loadfile
+   mediacodec-copy
+   mpv-cacert.pem
+   msg-level
+   network-timeout
+   no
+   null
+   opengl-es
+   panscan
+   pause
+   paused-for-cache
+   profile
+   replace
+   seek
+   seekable
+   speed
+   stretch
+   time-pos
+   tls-ca-file
+   tls-verify
+   video-params/aspect
+   video-params/rotate
+   video_buffer_mb
+   video_buffer_seconds
+   vo
+   x
+   yes
+=== Ldm0; ===
+   url
+   webox:content:
+   未命名内容

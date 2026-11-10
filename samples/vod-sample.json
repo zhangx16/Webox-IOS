@@ -1,0 +1,5 @@
+{
+  "name": "AppleCMS 示例",
+  "api": "https://example.com/api.php/provide/vod/",
+  "note": "Fill in a reachable AppleCMS v10 JSON endpoint; list/detail/play use ac=videolist."
+}

@@ -1,0 +1,473 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6070B9CF28E71610AA267AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A790BB479B2477E3A634A1EB /* Assets.xcassets */; };
+		D41DC8DB0DBC45A6F23B941D /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 572BD48544B6EF4B66D773D8 /* RootView.swift */; };
+		2A735B7A0BDCAA55703C0300 /* WeBoxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F2B51EEA317E353A7AEE91 /* WeBoxApp.swift */; };
+		70F77FED6F971648E26DFB84 /* Log.swift in Sources */ = {isa = PBXBuildFile; fileRef = C18EFD0CB9B7FB1D6AA4C501 /* Log.swift */; };
+		76E387147ACDF80FDF7DB070 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B946BC870B827B51FDF2D4 /* Models.swift */; };
+		8717B909BD4783C44E586E3E /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F0BB3127E83C29B4D1CFD3E /* Settings.swift */; };
+		C02C1821AF9531FC8AF8ADC7 /* CryptoBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F85059CD998FF366D75CD5AC /* CryptoBridge.swift */; };
+		326C2963E4638B53D054A196 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 088896E69497A5A74B3E741C /* DownloadManager.swift */; };
+		3BA4C8C9E582AF970BBF841E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EF2C7B541A5FDBC8C92E97 /* HTTPClient.swift */; };
+		1A39C0DCF727022A1A50B457 /* TMDBClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76999A331E5098E4C2C89920 /* TMDBClient.swift */; };
+		CA0888CC19F65708234511AD /* PlaybackResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A503A9CABABA9133E9E524C /* PlaybackResolver.swift */; };
+		40E71F58C8CF745EE6563BE4 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0E2B3F4354F4EA39C80AC26 /* PlayerModel.swift */; };
+		B73D098D6A2872DF17BEC659 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35097B6ADE836B3D5564C0A3 /* PlayerView.swift */; };
+		49812B0F589E31C2DC8F845F /* cheerio.js in Resources */ = {isa = PBXBuildFile; fileRef = D5E2D138FC43007642C4C4F3 /* cheerio.js */; };
+		D7061846CCCF7EEA82CFB89B /* cryptojs.js in Resources */ = {isa = PBXBuildFile; fileRef = C893C1671D6B29251055F199 /* cryptojs.js */; };
+		726D9B56FD4C807CF968ADE4 /* web-licenses.txt in Resources */ = {isa = PBXBuildFile; fileRef = 529450F7C7BF83363846C646 /* web-licenses.txt */; };
+		B750B93F06AA1571BE3275D7 /* webox.js in Resources */ = {isa = PBXBuildFile; fileRef = F7FE47E170B2B58D5446F719 /* webox.js */; };
+		D4AC374F5E6BA2E75BDC6DFC /* widget.js in Resources */ = {isa = PBXBuildFile; fileRef = B11C756B0C93A12DD4E1EAC4 /* widget.js */; };
+		9677E54148B0F651ACC1821A /* xptv.js in Resources */ = {isa = PBXBuildFile; fileRef = F8666DF9D51296C0457B4A6B /* xptv.js */; };
+		C4595C935EF72707E76DC0BE /* ScriptBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9444DFB18B55F18BBE91F37A /* ScriptBridge.swift */; };
+		5B3DD95A3DDA090C5DA80627 /* ScriptEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A2F449A409BE03850F8B93 /* ScriptEngine.swift */; };
+		F8343E5D79C82ACC39397C93 /* Providers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02158815D5B24105F656FA66 /* Providers.swift */; };
+		51025DAD20AF72DDBAF9EB56 /* SourceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C3E8FC05AEAACE8BF9445 /* SourceManager.swift */; };
+		F7CD6C3CB459D93C321DA01C /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E71C07DAE936DECFF82790 /* Library.swift */; };
+		43ADDB357B0B2A0C345E1072 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2519F54315BB96B2F209D53 /* Store.swift */; };
+		BAD357ECEF7CC4FB7BE6ED3E /* BrowseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CC7B49A55734FB26E6B6EC /* BrowseView.swift */; };
+		132E38BA7494A4E07F3219AD /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966038EBE35F247B66D2467B /* Components.swift */; };
+		12BB01506CF6CE310C1E891B /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6360DEFF65221570447A035C /* DetailView.swift */; };
+		AD1B729626C8EC8F76B530FF /* DiscoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979616DA39E28FCC18BB4209 /* DiscoverView.swift */; };
+		D789A1067A5F88E23D8F514D /* LibraryViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97A67A486935D807436A256 /* LibraryViews.swift */; };
+		58007C63C02645B1F7619DF5 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6381DD09737522DBFC4BA3AF /* SearchView.swift */; };
+		F423D164074D90537A71904E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45458BF663B2296C74A8986 /* SettingsView.swift */; };
+		37A980102235924C00670D9A /* SourceManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC01EF5285A43F2008AF5E4 /* SourceManagement.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A790BB479B2477E3A634A1EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Assets.xcassets"; sourceTree = "<group>"; };
+		572BD48544B6EF4B66D773D8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootView.swift"; sourceTree = "<group>"; };
+		E7F2B51EEA317E353A7AEE91 /* WeBoxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WeBoxApp.swift"; sourceTree = "<group>"; };
+		C18EFD0CB9B7FB1D6AA4C501 /* Log.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Log.swift"; sourceTree = "<group>"; };
+		A4B946BC870B827B51FDF2D4 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Models.swift"; sourceTree = "<group>"; };
+		8F0BB3127E83C29B4D1CFD3E /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings.swift"; sourceTree = "<group>"; };
+		F85059CD998FF366D75CD5AC /* CryptoBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CryptoBridge.swift"; sourceTree = "<group>"; };
+		088896E69497A5A74B3E741C /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DownloadManager.swift"; sourceTree = "<group>"; };
+		38EF2C7B541A5FDBC8C92E97 /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPClient.swift"; sourceTree = "<group>"; };
+		76999A331E5098E4C2C89920 /* TMDBClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TMDBClient.swift"; sourceTree = "<group>"; };
+		0A503A9CABABA9133E9E524C /* PlaybackResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlaybackResolver.swift"; sourceTree = "<group>"; };
+		E0E2B3F4354F4EA39C80AC26 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerModel.swift"; sourceTree = "<group>"; };
+		35097B6ADE836B3D5564C0A3 /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PlayerView.swift"; sourceTree = "<group>"; };
+		D5E2D138FC43007642C4C4F3 /* cheerio.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "cheerio.js"; sourceTree = "<group>"; };
+		C893C1671D6B29251055F199 /* cryptojs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "cryptojs.js"; sourceTree = "<group>"; };
+		529450F7C7BF83363846C646 /* web-licenses.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "web-licenses.txt"; sourceTree = "<group>"; };
+		F7FE47E170B2B58D5446F719 /* webox.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "webox.js"; sourceTree = "<group>"; };
+		B11C756B0C93A12DD4E1EAC4 /* widget.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "widget.js"; sourceTree = "<group>"; };
+		F8666DF9D51296C0457B4A6B /* xptv.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "xptv.js"; sourceTree = "<group>"; };
+		9444DFB18B55F18BBE91F37A /* ScriptBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScriptBridge.swift"; sourceTree = "<group>"; };
+		70A2F449A409BE03850F8B93 /* ScriptEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ScriptEngine.swift"; sourceTree = "<group>"; };
+		02158815D5B24105F656FA66 /* Providers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Providers.swift"; sourceTree = "<group>"; };
+		FB0C3E8FC05AEAACE8BF9445 /* SourceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SourceManager.swift"; sourceTree = "<group>"; };
+		82E71C07DAE936DECFF82790 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Library.swift"; sourceTree = "<group>"; };
+		A2519F54315BB96B2F209D53 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Store.swift"; sourceTree = "<group>"; };
+		66CC7B49A55734FB26E6B6EC /* BrowseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BrowseView.swift"; sourceTree = "<group>"; };
+		966038EBE35F247B66D2467B /* Components.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Components.swift"; sourceTree = "<group>"; };
+		6360DEFF65221570447A035C /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailView.swift"; sourceTree = "<group>"; };
+		979616DA39E28FCC18BB4209 /* DiscoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DiscoverView.swift"; sourceTree = "<group>"; };
+		C97A67A486935D807436A256 /* LibraryViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LibraryViews.swift"; sourceTree = "<group>"; };
+		6381DD09737522DBFC4BA3AF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SearchView.swift"; sourceTree = "<group>"; };
+		F45458BF663B2296C74A8986 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SettingsView.swift"; sourceTree = "<group>"; };
+		EFC01EF5285A43F2008AF5E4 /* SourceManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SourceManagement.swift"; sourceTree = "<group>"; };
+		84337AD8D27FCD69AF2C4FC2 /* WeBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		424153ED3CD079DB4DB459AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		518DA81DB9B99529C0C0AEBE = {
+			isa = PBXGroup;
+			children = (
+				C5DD32CD07825D92D9029681 /* WeBox */,
+				547D009064F7C3F13BEF3460 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		547D009064F7C3F13BEF3460 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84337AD8D27FCD69AF2C4FC2 /* WeBox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+				C5DD32CD07825D92D9029681 = {
+					isa = PBXGroup;
+					children = (
+						4328D6D406A0723B49B63F51 /* App */,
+						4CAA564E80CF7BFB5F8C8901 /* Core */,
+						23427CFC6BEA523F25F7498A /* Crypto */,
+						A755D313CFBAC609227139DD /* Download */,
+						598A000B831E35E2647F60F8 /* Net */,
+						693E632A8062C509F39ED1D8 /* Playback */,
+						B958FFE3153DE783DB0D0C37 /* Resources */,
+						9563D124933E9121CBA73038 /* Script */,
+						165A21F3C4990596E8865A54 /* Sources */,
+						4813C8B88B5D247286897CD9 /* Storage */,
+						A8CC7296C8305E8A2E371C5C /* UI */,
+						A790BB479B2477E3A634A1EB /* Assets.xcassets */,
+					);
+					path = WeBox;
+					sourceTree = "<group>";
+				};
+				4328D6D406A0723B49B63F51 = {
+					isa = PBXGroup;
+					children = (
+						572BD48544B6EF4B66D773D8 /* RootView.swift */,
+						E7F2B51EEA317E353A7AEE91 /* WeBoxApp.swift */,
+					);
+					path = App;
+					sourceTree = "<group>";
+				};
+				4CAA564E80CF7BFB5F8C8901 = {
+					isa = PBXGroup;
+					children = (
+						C18EFD0CB9B7FB1D6AA4C501 /* Log.swift */,
+						A4B946BC870B827B51FDF2D4 /* Models.swift */,
+						8F0BB3127E83C29B4D1CFD3E /* Settings.swift */,
+					);
+					path = Core;
+					sourceTree = "<group>";
+				};
+				23427CFC6BEA523F25F7498A = {
+					isa = PBXGroup;
+					children = (
+						F85059CD998FF366D75CD5AC /* CryptoBridge.swift */,
+					);
+					path = Crypto;
+					sourceTree = "<group>";
+				};
+				A755D313CFBAC609227139DD = {
+					isa = PBXGroup;
+					children = (
+						088896E69497A5A74B3E741C /* DownloadManager.swift */,
+					);
+					path = Download;
+					sourceTree = "<group>";
+				};
+				598A000B831E35E2647F60F8 = {
+					isa = PBXGroup;
+					children = (
+						38EF2C7B541A5FDBC8C92E97 /* HTTPClient.swift */,
+						76999A331E5098E4C2C89920 /* TMDBClient.swift */,
+					);
+					path = Net;
+					sourceTree = "<group>";
+				};
+				693E632A8062C509F39ED1D8 = {
+					isa = PBXGroup;
+					children = (
+						0A503A9CABABA9133E9E524C /* PlaybackResolver.swift */,
+						E0E2B3F4354F4EA39C80AC26 /* PlayerModel.swift */,
+						35097B6ADE836B3D5564C0A3 /* PlayerView.swift */,
+					);
+					path = Playback;
+					sourceTree = "<group>";
+				};
+				B958FFE3153DE783DB0D0C37 = {
+					isa = PBXGroup;
+					children = (
+						95E3AF8667D9E4E8B1EEBA03 /* runtime */,
+					);
+					path = Resources;
+					sourceTree = "<group>";
+				};
+				95E3AF8667D9E4E8B1EEBA03 = {
+					isa = PBXGroup;
+					children = (
+						D5E2D138FC43007642C4C4F3 /* cheerio.js */,
+						C893C1671D6B29251055F199 /* cryptojs.js */,
+						529450F7C7BF83363846C646 /* web-licenses.txt */,
+						F7FE47E170B2B58D5446F719 /* webox.js */,
+						B11C756B0C93A12DD4E1EAC4 /* widget.js */,
+						F8666DF9D51296C0457B4A6B /* xptv.js */,
+					);
+					path = runtime;
+					sourceTree = "<group>";
+				};
+				9563D124933E9121CBA73038 = {
+					isa = PBXGroup;
+					children = (
+						9444DFB18B55F18BBE91F37A /* ScriptBridge.swift */,
+						70A2F449A409BE03850F8B93 /* ScriptEngine.swift */,
+					);
+					path = Script;
+					sourceTree = "<group>";
+				};
+				165A21F3C4990596E8865A54 = {
+					isa = PBXGroup;
+					children = (
+						02158815D5B24105F656FA66 /* Providers.swift */,
+						FB0C3E8FC05AEAACE8BF9445 /* SourceManager.swift */,
+					);
+					path = Sources;
+					sourceTree = "<group>";
+				};
+				4813C8B88B5D247286897CD9 = {
+					isa = PBXGroup;
+					children = (
+						82E71C07DAE936DECFF82790 /* Library.swift */,
+						A2519F54315BB96B2F209D53 /* Store.swift */,
+					);
+					path = Storage;
+					sourceTree = "<group>";
+				};
+				A8CC7296C8305E8A2E371C5C = {
+					isa = PBXGroup;
+					children = (
+						66CC7B49A55734FB26E6B6EC /* BrowseView.swift */,
+						966038EBE35F247B66D2467B /* Components.swift */,
+						6360DEFF65221570447A035C /* DetailView.swift */,
+						979616DA39E28FCC18BB4209 /* DiscoverView.swift */,
+						C97A67A486935D807436A256 /* LibraryViews.swift */,
+						6381DD09737522DBFC4BA3AF /* SearchView.swift */,
+						F45458BF663B2296C74A8986 /* SettingsView.swift */,
+						EFC01EF5285A43F2008AF5E4 /* SourceManagement.swift */,
+					);
+					path = UI;
+					sourceTree = "<group>";
+				};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42AEFBAE01D2DFD981F7DA7D /* WeBox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 354589B28580510B6EC24620 /* Build configuration list for PBXNativeTarget "WeBox" */;
+			buildPhases = (
+				7A70D71C385290AF96BF1031 /* Sources */,
+				424153ED3CD079DB4DB459AF /* Frameworks */,
+				285BB1C1430063331E9F5DD0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeBox;
+			productName = WeBox;
+			productReference = 84337AD8D27FCD69AF2C4FC2 /* WeBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		46F86FAA6BBF9AC94A7E4595 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					42AEFBAE01D2DFD981F7DA7D = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "WeBox" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = "zh-Hans";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 518DA81DB9B99529C0C0AEBE;
+			productRefGroup = 547D009064F7C3F13BEF3460 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42AEFBAE01D2DFD981F7DA7D /* WeBox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		285BB1C1430063331E9F5DD0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6070B9CF28E71610AA267AE,
+				49812B0F589E31C2DC8F845F,
+				D7061846CCCF7EEA82CFB89B,
+				726D9B56FD4C807CF968ADE4,
+				B750B93F06AA1571BE3275D7,
+				D4AC374F5E6BA2E75BDC6DFC,
+				9677E54148B0F651ACC1821A,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7A70D71C385290AF96BF1031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D41DC8DB0DBC45A6F23B941D,
+				2A735B7A0BDCAA55703C0300,
+				70F77FED6F971648E26DFB84,
+				76E387147ACDF80FDF7DB070,
+				8717B909BD4783C44E586E3E,
+				C02C1821AF9531FC8AF8ADC7,
+				326C2963E4638B53D054A196,
+				3BA4C8C9E582AF970BBF841E,
+				1A39C0DCF727022A1A50B457,
+				CA0888CC19F65708234511AD,
+				40E71F58C8CF745EE6563BE4,
+				B73D098D6A2872DF17BEC659,
+				C4595C935EF72707E76DC0BE,
+				5B3DD95A3DDA090C5DA80627,
+				F8343E5D79C82ACC39397C93,
+				51025DAD20AF72DDBAF9EB56,
+				F7CD6C3CB459D93C321DA01C,
+				43ADDB357B0B2A0C345E1072,
+				BAD357ECEF7CC4FB7BE6ED3E,
+				132E38BA7494A4E07F3219AD,
+				12BB01506CF6CE310C1E891B,
+				AD1B729626C8EC8F76B530FF,
+				D789A1067A5F88E23D8F514D,
+				58007C63C02645B1F7619DF5,
+				F423D164074D90537A71904E,
+				37A980102235924C00670D9A,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C19BB360D63F1BA9F02BAB59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("DEBUG=1", "$(inherited)");
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = -Onone;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		88A29AB70C762FCDF6D9A1D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = -O;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		331C5106741EE8E14B752D88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 67;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeBox-Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 0.1.64;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webox.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		256639833029BCA847F093AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 67;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = WeBox-Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				LD_RUNPATH_SEARCH_PATHS = ("$(inherited)", "@executable_path/Frameworks");
+				MARKETING_VERSION = 0.1.64;
+				PRODUCT_BUNDLE_IDENTIFIER = com.webox.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F4E3D13C2320EDA50221924 /* Build configuration list for PBXProject "WeBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C19BB360D63F1BA9F02BAB59 /* Debug */,
+				88A29AB70C762FCDF6D9A1D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		354589B28580510B6EC24620 /* Build configuration list for PBXNativeTarget "WeBox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				331C5106741EE8E14B752D88 /* Debug */,
+				256639833029BCA847F093AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 46F86FAA6BBF9AC94A7E4595 /* Project object */;
+}

@@ -1,0 +1,43 @@
+{
+  "package": "dev.webox.app",
+  "app_name": "WeBox",
+  "version_name": "0.1.64",
+  "version_code": "67",
+  "min_sdk": "23",
+  "target_sdk": "36",
+  "permissions": [
+    "android.permission.FOREGROUND_SERVICE",
+    "android.permission.POST_NOTIFICATIONS",
+    "android.permission.INTERNET",
+    "android.permission.MODIFY_AUDIO_SETTINGS",
+    "android.permission.ACCESS_NETWORK_STATE",
+    "android.permission.WAKE_LOCK",
+    "dev.webox.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+    "android.permission.FOREGROUND_SERVICE_DATA_SYNC"
+  ],
+  "declared_permissions": [
+    "dev.webox.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+  ],
+  "activities": [
+    "dev.webox.app.PlayerActivity",
+    "dev.webox.app.MainActivity",
+    "dev.webox.app.ReleaseNoticeActivity",
+    "dev.webox.app.ArtworkActivity",
+    "dev.webox.app.ScriptViewerActivity"
+  ],
+  "services": [
+    "dev.webox.app.DownloadService"
+  ],
+  "receivers": [
+    "androidx.profileinstaller.ProfileInstallReceiver"
+  ],
+  "providers": [
+    "androidx.startup.InitializationProvider"
+  ],
+  "main_activity": "dev.webox.app.MainActivity",
+  "libraries": [],
+  "features": [],
+  "signature_names": [
+    "META-INF/CERT.RSA"
+  ]
+}

@@ -1,0 +1,42 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="67" android:versionName="0.1.64" android:compileSdkVersion="36" android:compileSdkVersionCodename="16" package="dev.webox.app" platformBuildVersionCode="36" platformBuildVersionName="16">
+  <uses-sdk android:minSdkVersion="23" android:targetSdkVersion="36"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC"/>
+  <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+  <uses-permission android:name="android.permission.WAKE_LOCK"/>
+  <permission android:name="dev.webox.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="0x00000002"/>
+  <uses-permission android:name="dev.webox.app.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+  <application android:theme="@7F0E0026" android:label="@7F0D0001" android:icon="@7F0B0000" android:name="dev.webox.app.WeBoxApplication" android:allowBackup="false" android:supportsRtl="true" android:extractNativeLibs="true" android:usesCleartextTraffic="true" android:roundIcon="@7F0B0000" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:dataExtractionRules="@7F100000" android:enableOnBackInvokedCallback="false">
+    <activity android:name="dev.webox.app.PlayerActivity" android:exported="false" android:configChanges="0x000004A0" android:rotationAnimation="0x00000002"/>
+    <activity android:name="dev.webox.app.MainActivity" android:exported="true" android:screenOrientation="1">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:theme="@android:01030010" android:name="dev.webox.app.ReleaseNoticeActivity" android:exported="false"/>
+    <activity android:name="dev.webox.app.ArtworkActivity" android:exported="false"/>
+    <activity android:name="dev.webox.app.ScriptViewerActivity" android:exported="false"/>
+    <service android:name="dev.webox.app.DownloadService" android:exported="false" android:foregroundServiceType="0x00000001"/>
+    <provider android:name="androidx.startup.InitializationProvider" android:exported="false" android:authorities="dev.webox.app.androidx-startup">
+      <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+    </provider>
+    <receiver android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP" android:enabled="true" android:exported="true" android:directBootAware="false">
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+      </intent-filter>
+    </receiver>
+  </application>
+</manifest>

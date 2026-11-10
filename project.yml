@@ -1,0 +1,29 @@
+# XcodeGen alternative to the checked-in WeBox.xcodeproj.
+# Run: xcodegen generate
+name: WeBox
+options:
+  bundleIdPrefix: com.webox
+  deploymentTarget:
+    iOS: "16.0"
+  createIntermediateGroups: true
+targets:
+  WeBox:
+    type: application
+    platform: iOS
+    sources:
+      - path: WeBox
+    settings:
+      base:
+        INFOPLIST_FILE: WeBox-Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+        PRODUCT_BUNDLE_IDENTIFIER: com.webox.ios
+        PRODUCT_NAME: WeBox
+        MARKETING_VERSION: 0.1.64
+        CURRENT_PROJECT_VERSION: 67
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.0"
+        CODE_SIGN_STYLE: Automatic
+        ENABLE_USER_SCRIPT_SANDBOXING: YES
+        SWIFT_EMIT_LOC_STRINGS: YES

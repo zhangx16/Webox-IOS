@@ -1,0 +1,5 @@
+#EXTM3U
+#EXTINF:-1 tvg-logo="https://peach.blender.org/wp-content/uploads/title_anouncement.jpg" group-title="测试频道",Big Buck Bunny（测试）
+https://storage.googleapis.com/exoplayer-test-media-0/BigBuckBunny_320x180.mp4
+#EXTINF:-1 group-title="测试频道",Apple BipBop（HLS）
+https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_4x3/bipbop_4x3_variant.m3u8

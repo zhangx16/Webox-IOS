@@ -1,0 +1,19 @@
+Analyzer host: Windows x64
+REA (rea-agents CLI): 6.8.0
+Node.js: v24.18.0 (REA recommends 22.x >= 22.23.4 or 24.x >= 24.22.1)
+Python: 3.11.9
+androguard: 4.1.4
+Java: not installed (jadx / apktool providers unavailable)
+Native analysis engines: none (Hopper / Ghidra / IDA / jadx-headless-mcp absent)
+
+rea doctor:
+  healthy: false (node version below recommendation; all native providers missing)
+
+rea capabilities (available on this host):
+  rea-artifact-graph: extract_artifact, inspect_artifact, decode_interface_builder,
+                      inspect_keyed_archive, trace_dylib_resolution
+  all android_* and native_* providers: unavailable
+
+Manual APK extraction: Windows bsdtar (tar -xf)
+DEX parsing: androguard (APK, DEX, AXML, ARSC)
+Runtime behaviour: Node.js vm harness reproducing the native bridge envelopes

@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode
+build/
+DerivedData/
+dist/
+*.xcarchive
+*.ipa
+*.tipa
+*.dSYM
+*.dSYM.zip
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+*.xcodeproj/project.xcworkspace/xcuserdata/
+*.xcodeproj/xcuserdata/
+
+# Local tooling
+.cache/
+__pycache__/
+*.pyc
+node_modules/
+webox-analysis/
