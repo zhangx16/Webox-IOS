@@ -21,6 +21,9 @@ jobs:
     name: Build WeBox (${{ github.event.inputs.configuration || 'Release' }})
     runs-on: macos-15
     timeout-minutes: 45
+    permissions:
+      contents: read
+      issues: write
 
     env:
       PROJECT: WeBox.xcodeproj
@@ -150,3 +153,11 @@ jobs:
           name: WeBox-signed-${{ github.sha }}
           path: dist/signed/*.ipa
           if-no-files-found: warn
+
+      - name: Publish failure diagnostics
+        if: failure()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x scripts/publish_failure.sh
+          bash scripts/publish_failure.sh
