@@ -22,7 +22,7 @@ jobs:
     runs-on: macos-15
     timeout-minutes: 45
     permissions:
-      contents: read
+      contents: write
       issues: write
 
     env:
@@ -169,3 +169,11 @@ jobs:
         run: |
           chmod +x scripts/publish_build_report.sh
           bash scripts/publish_build_report.sh
+
+      - name: Publish release
+        if: success()
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          chmod +x scripts/publish_release.sh
+          bash scripts/publish_release.sh
